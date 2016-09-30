@@ -3,6 +3,6 @@
 	app.controller("searchBar",searchBar);
 	
 	function searchBar($scope, $http) {
-		$scope.search= "",
+	
 	}
 })();

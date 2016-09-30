@@ -4,16 +4,16 @@
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<h1>Here comes title</h1>
+		<h1 id="title">Here comes title</h1>
 		<div ng-controller="searchBar">
 			<div>
-				<input placeholder="search" ng-model="search" ng-change="searchInfo()" />
-				
+				<input placeholder="search" ng-model="search"  />
 			</div> <!--closing input search-->
-			
+			{{search}}
 			</div><!--closing div controller-->
+			<br><br>
 			
-			
+			<sign-up></sign-up>
 			
 			
 			
@@ -26,5 +26,6 @@
 			<script src="app/config.js"></script>
 			<!--controller-->
 			<script src="app/controllers/searchBar.js"></script>
-	</body>
+			<!--directives-->
+			<script src="app/directives/signup.js"></script>
 </html>
