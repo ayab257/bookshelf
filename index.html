@@ -5,27 +5,34 @@
 	</head>
 	<body>
 		<h1 id="title">Here comes title</h1>
-		<div ng-controller="searchBar">
+		<div ng-controller="searchBar"> <!--div controller-->
 			<div>
-				<input placeholder="search" ng-model="search"  />
+				<input placeholder="search" ng-model="search" ng-change="getBooks()"  />
 			</div> <!--closing input search-->
-			{{search}}
+			
+			
+			<div ng-repeat="r in results">
+				{{r.volumeInfo.title}}
+			</div>
+			
+			
+			
 			</div><!--closing div controller-->
-			<br><br>
-			
-			<sign-up></sign-up>
-			
-			
-			
-			
+			<br><br><br>
+			<div id="div">This is jQuery</div>
+			<br>
+			<button id="btn1">Fade out</button>
+			<button id="btn2">Fade in</button>
 			
 			
 			
 			<!--angular-->
 			<script src="js/angular.js"></script>
+			<script src="node_modules/jQuery/tmp/jquery.js"></script>
+			<script src="jQuery.js"></script>
 			<script src="app/config.js"></script>
 			<!--controller-->
 			<script src="app/controllers/searchBar.js"></script>
 			<!--directives-->
-			<script src="app/directives/signup.js"></script>
+			<!-- <script src="app/directives/signup.js"></script> -->
 </html>
