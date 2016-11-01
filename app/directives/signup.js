@@ -13,7 +13,7 @@
 // 			
 		// };
 		// var JSONdata= JSON.stringify(data);
-		// local.storage.setItem("data", JSONdata);
+		// localStorage.setItem("data", JSONdata);
 		// }
 // 		
 		// $scope.getData= function($scope){
