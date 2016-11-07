@@ -3,6 +3,7 @@
 	app.controller("searchBar",searchBar);
 	
 	function searchBar($scope, $http) {
+		$scope.sortBy="title";
 	var key ="&key=AIzaSyBgzihkXKhmcw1jcbKGlOmDi3TpOak1Fm4";
 	var url="https://www.googleapis.com/books/v1/volumes?q=";
 	var QUERY = "+intitle:";
