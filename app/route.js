@@ -3,22 +3,16 @@
 
 	function route($routeProvider) {
 		$routeProvider.when('/search', {
-			templateUrl : 'app/views/search.html',
+			templateUrl : "app/views/search.html",
+
+
+		}).when('/about', {
+			templateUrl : 'app/views/about.html',
 			controller : "searchBar",
-			
-
-		}).when('/contactus', {
-			templateUrl : 'app/views/contactus.html',
-			controller : "contactUs"
-			
-
-		}).when('/contactus/:name/:age', {
-			templateUrl : 'app/views/contactus.html',
-			
-
-		}).when('/home', {
-			templateUrl : 'app/views/home.html',
-			controller : "home"
+// 			
+		// }).when('/home', {
+			// templateUrl : 'app/views/home.html',
+			// controller : "home"
 		
 
 		}).otherwise({
