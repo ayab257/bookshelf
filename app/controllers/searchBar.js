@@ -2,7 +2,12 @@
 	var app = angular.module("app");
 	app.controller("searchBar",searchBar);
 	
-	function searchBar($scope, $http) {
+	function searchBar($scope, $http, bookService,$location) {
+		
+		$scope.goToBook= function(book){
+			bookService.set(book);
+			$location.path("/bookInfo")
+		}
 		$scope.sortBy="title";
 	var key ="&key=AIzaSyBgzihkXKhmcw1jcbKGlOmDi3TpOak1Fm4";
 	var url="https://www.googleapis.com/books/v1/volumes?q=";

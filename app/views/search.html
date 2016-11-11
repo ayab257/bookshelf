@@ -1,21 +1,14 @@
-<div ng-controller="searchBar"> <!--div controller-->			
 			<div>
 				<input type="text" placeholder="search" ng-model="search" ng-change="getBooks()"  />
 			</div> <!--closing input search-->
 			
 			<br>
-			<select ng-model="sortBy">
-				Order By- 
-			<option value="title">title</option>
-			<option value="author">author</option>
-			</select>
-			<br>
-			<br>
 			
-			<div  ng-repeat="r in results | orderBy: title">
+			
+			<div>
 				<ul class="list-inline">
-					<li class="list-group-item" ng-repeat="r in results">
-						<img ng-src="{{r.volumeInfo.imageLinks.smallThumbnail}}" />
+					<li class="list-group-item" ng-repeat="r in results" ng-click="goToBook(r)">
+					<img ng-src="{{r.volumeInfo.imageLinks.smallThumbnail}}" />
 						<br>
 						Title- {{r.volumeInfo.title}}
 						<br>
@@ -27,4 +20,3 @@
 				
 				<hr>
 			</div>
-</div><!--closing div controller-->

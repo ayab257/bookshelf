@@ -1,0 +1,30 @@
+
+<div id="book-info">
+	<img ng-src="{{bookDetails.volumeInfo.imageLinks.smallThumbnail}}" />
+	<h3>{{bookDetails.volumeInfo.title}}</h3>
+	<div>
+		Title- {{bookDetails.volumeInfo.title}}
+		<br>
+		Author- {{bookDetails.volumeInfo.authors[0]}}
+		<br>
+		Page Count- {{bookDetails.volumeInfo.pageCount}}
+		<br>
+		Language- {{bookDetails.volumeInfo.language}}
+		<br>
+		Categories- {{bookDetails.volumeInfo.categories}}
+		<br>
+		Publishe Date- {{bookDetails.volumeInfo.publishedDate}}
+		<br>
+		<hr>
+		<br>
+		<div id="bk-info">
+		Description- {{bookDetails.volumeInfo.description}}
+		<hr>
+		<br>
+		Buy at- <a ng-href="{{bookDetails.volumeInfo.saleInfo.buyLink}}">LINK</a>
+		<br>
+    	</div>
+		<br>
+		
+	</div>
+</div>
