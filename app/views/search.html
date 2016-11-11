@@ -12,9 +12,19 @@
 			<br>
 			<br>
 			
-			<div ng-repeat="r in results | orderBy: title">
-				Book- {{r.volumeInfo.title}}<br>
-				Author- {{r.volumeInfo.authors[0]}}
+			<div  ng-repeat="r in results | orderBy: title">
+				<ul class="list-inline">
+					<li class="list-group-item" ng-repeat="r in results">
+						<img ng-src="{{r.volumeInfo.imageLinks.smallThumbnail}}" />
+						<br>
+						Title- {{r.volumeInfo.title}}
+						<br>
+						Author- {{r.volumeInfo.authors[0]}}
+					</li>
+				</ul>
+				
+				<br>
+				
 				<hr>
 			</div>
 </div><!--closing div controller-->

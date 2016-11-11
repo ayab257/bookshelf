@@ -1,8 +1,8 @@
-/*body{
-	background-image: url("../img/Bookshelf.jpg");
+body{
+	background-image: url("../img/books.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-}*/
+}
 
 #signUp{
 	width: 12%;
@@ -35,4 +35,10 @@ input[type=text] {
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
     width: 100%;
+}
+
+img{
+	width: 200px;
+	height: 300px;
+	margin: 30px;
 }
