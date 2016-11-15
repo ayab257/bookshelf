@@ -6,7 +6,7 @@
 		
 		$scope.goToBook= function(book){
 			bookService.set(book);
-			$location.path("/bookInfo")
+			$location.path("/bookInfo");
 		}
 		$scope.sortBy="title";
 	var key ="&key=AIzaSyBgzihkXKhmcw1jcbKGlOmDi3TpOak1Fm4";
