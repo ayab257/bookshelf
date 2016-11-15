@@ -1,5 +1,5 @@
-
 <div id="book-info">
+	<br>
 	<img ng-src="{{bookDetails.volumeInfo.imageLinks.smallThumbnail}}" />
 	<h3>{{bookDetails.volumeInfo.title}}</h3>
 	<div>
@@ -18,13 +18,15 @@
 		<hr>
 		<br>
 		<div id="bk-info">
-		Description- {{bookDetails.volumeInfo.description}}
-		<hr>
+			Description- {{bookDetails.volumeInfo.description}}
+			<hr>
+			<br>
+			Buy at- <a ng-href="{{bookDetails.volumeInfo.saleInfo.buyLink}}">LINK</a>
+			<br>
+		</div>
 		<br>
-		Buy at- <a ng-href="{{bookDetails.volumeInfo.saleInfo.buyLink}}">LINK</a>
-		<br>
-    	</div>
-		<br>
-		<button> <span class="glyphicon glyphicon-plus"></span> Add to profile</button>
+		<button type="button" class="btn btn-default btn-lg">
+			<i class="fa fa-plus-circle fa-lg" style="color:green" aria-hidden="true"></i>  Add to profile
+		</button>
 	</div>
 </div>

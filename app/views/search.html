@@ -1,22 +1,24 @@
 			<div>
-				<input type="text" placeholder="search" ng-model="search" ng-change="getBooks()"  />
+				<input  type="text" placeholder="search" ng-model="search" ng-change="getBooks()"  />
 			</div> <!--closing input search-->
 			
 			<br>
 			
 			
-			<div class="new-books">
-				<ul class="list-inline">
-					<li class="list-group-item" ng-repeat="r in results" ng-click="goToBook(r)">
+			
+				<ul class="results">
+					<li ng-repeat="r in results" ng-click="goToBook(r)">
 					<img ng-src="{{r.volumeInfo.imageLinks.smallThumbnail}}" />
+					<div>
 						<br>
 						Title- {{r.volumeInfo.title}}
 						<br>
 						Author- {{r.volumeInfo.authors[0]}}
+					</div>
 					</li>
 				</ul>
 				
 				<br>
 				
 				<hr>
-			</div>
+			

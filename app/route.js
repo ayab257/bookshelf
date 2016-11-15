@@ -16,6 +16,9 @@
 		}).when('/', {
 			template : '<h1>HELLO BOOK LOVERS</h1>',
 
+		}).when('/profile', {
+			templateUrl : 'app/views/profile.html',
+
 		}).otherwise({
 			redirectTo : '/'
 		});
