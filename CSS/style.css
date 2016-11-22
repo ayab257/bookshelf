@@ -1,8 +1,9 @@
-body{
+/*body{
 	background-image: url("../img/books.jpg");
-	background-size: 100%;
+	background-size: cover;
 	/*background-repeat: no-repeat;*/
-}
+	background-attachment: fixed;
+}*/
 
 #signUp{
 	width: 12%;
@@ -15,7 +16,10 @@ body{
 	clear:both;
 	overflow: hidden;
 }
-
+nav{
+	position: fixed;
+	width: 100%;
+}
 #title{
 	text-align: center;
 }
@@ -50,10 +54,12 @@ img{
 	height: 100%;	
 }
 .results li{
+	padding-top: 2%;
+	text-align:center;
 	list-style: none;
 	float: left;
-	width: 20%;
-	height: 60%;
+	width: 15%;
+	height: 55%;
 	  color: white;
     text-shadow:
     -1px -1px 0 #000,
@@ -61,5 +67,11 @@ img{
     -1px 1px 0 #000,
     1px 1px 0 #000;  
     font-weight: 600;
+    margin: 3%;
 }
-
+.results li:hover {
+    box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.5);
+}
+.search-bar{
+	margin: 2%;
+}

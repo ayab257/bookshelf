@@ -1,11 +1,9 @@
-			<div>
+			<div class="search-bar">
 				<input  type="text" placeholder="search" ng-model="search" ng-change="getBooks()"  />
 			</div> <!--closing input search-->
 			
 			<br>
-			
-			
-			
+				
 				<ul class="results">
 					<li ng-repeat="r in results" ng-click="goToBook(r)">
 					<img ng-src="{{r.volumeInfo.imageLinks.smallThumbnail}}" />
@@ -20,5 +18,4 @@
 				
 				<br>
 				
-				<hr>
 			

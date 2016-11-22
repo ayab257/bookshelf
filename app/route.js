@@ -14,10 +14,11 @@
 			controller : "bookInfo",
 
 		}).when('/', {
-			template : '<h1>HELLO BOOK LOVERS</h1>',
+			templateUrl : '<h1>HELLO BOOK LOVERS</h1>',
 
 		}).when('/profile', {
 			templateUrl : 'app/views/profile.html',
+			controller : "profile",
 
 		}).otherwise({
 			redirectTo : '/'
