@@ -1,1 +1,11 @@
-<h1>{{data.title}}</h1>
+<ul>
+	<li ng-repeat="book in books" >
+
+		<h1>{{book.title}}</h1>
+		<div>
+			{{book.author}}
+		</div>
+		<input type="checkbox" ng-click='findBook(book.id)' />
+	</li>
+</ul>
+

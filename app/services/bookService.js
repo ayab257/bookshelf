@@ -15,10 +15,14 @@
 	function set(book) {
 		console.log("book ", book)
 		selectedBook = book;
+		localStorage.setItem("currentBook",JSON.stringify(book));
 	}
 
 	function get() {
-		return selectedBook;
+		if(selectedBook) return selectedBook
+		
+		 selectedBook= JSON.parse(localStorage.getItem("currentBook"));
+		 return selectedBook;
 	}
 
 })();

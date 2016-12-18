@@ -11,11 +11,23 @@
 		$scope.sortBy="title";
 	var key ="&key=AIzaSyBgzihkXKhmcw1jcbKGlOmDi3TpOak1Fm4";
 	var url="https://www.googleapis.com/books/v1/volumes?q=";
-	var QUERY = "+intitle:";
+	var QUERY_IN_TITLE= "+intitle:";
+	var QUERY_IN_AUTHOR= "+inauthor:";
 		$scope.getBooks = function() {
 
+		var QUERY="";
+			if($scope.filterType=="title")
+			{
+				QUERY= QUERY_IN_TITLE
+			}
+			else
+			{
+				QUERY= QUERY_IN_AUTHOR;
+			}
+
+
 			if ($scope.searchName != '') {
-				var promise = $http.get(url + $scope.search + QUERY+$scope.search  + key);
+				var promise = $http.get(url + QUERY+$scope.search  + key);
 					promise.then(successCallback, errorCallback);
 			} else {
 

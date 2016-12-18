@@ -8,7 +8,7 @@
 
 		}).when('/about', {
 			templateUrl : 'app/views/about.html'
-			
+
 		}).when('/bookInfo', {
 			templateUrl : 'app/views/bookInfo.html',
 			controller : "bookInfo",
@@ -19,11 +19,14 @@
 		}).when('/profile', {
 			templateUrl : 'app/views/profile.html',
 			controller : "profile",
-
+			
+		}).when('/contactUs', {
+			templateUrl : 'app/views/contact.html',
+			
 		}).otherwise({
 			redirectTo : '/'
 		});
 
 	}
 
-})(); 
+})();
