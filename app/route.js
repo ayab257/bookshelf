@@ -13,8 +13,8 @@
 			templateUrl : 'app/views/bookInfo.html',
 			controller : "bookInfo",
 
-		}).when('/', {
-			templateUrl : '<h1>HELLO BOOK LOVERS</h1>',
+		}).when('/home', {
+			template : '<h1>HELLO BOOK LOVERS</h1>',
 
 		}).when('/profile', {
 			templateUrl : 'app/views/profile.html',

@@ -1,11 +1,17 @@
-<ul>
+<ul class="profile-book">
 	<li ng-repeat="book in books" >
 
 		<h1>{{book.title}}</h1>
+		<img ng-src="{{book.img}}" />
 		<div>
-			{{book.author}}
+			By- {{book.author}}<br><br>
+		
+		Did you read this book?&nbsp&nbsp <input type="checkbox" ng-click='findBook(book.id)' /> <br><br>
+		
+		Review: 
+		<br>
+		<textarea></textarea>
 		</div>
-		<input type="checkbox" ng-click='findBook(book.id)' />
 	</li>
 </ul>
 

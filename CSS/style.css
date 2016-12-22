@@ -60,18 +60,49 @@ img{
 	float: left;
 	width: 15%;
 	height: 55%;
-	  color: white;
+	  /*color: white;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
-    font-weight: 600;
+    font-weight: 600;*/
     margin: 3%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.results li .title{
+	color: black;
+	font-weight: 600;
+	font-size: 16px;
+}
+.results li .author{
+	color: black;
+	font-weight: 300;
+	font-size:14px;
+}
+.results p{
+	    margin: 0 0 -5px;
 }
 .results li:hover {
     box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.3);
 }
 .search-bar{
 	margin: 2%;
+}
+.search-by{
+	margin-left: 2%;
+}
+.profile-book li{
+	list-style: none;
+	float: left; 
+	margin: 2%;
+}
+.profile-book li h1{
+	text-align: center;
+}
+.profile-book li div{
+	margin-top: 10%;
+	font-size: 15px;
+	font-weight: 300;
 }
