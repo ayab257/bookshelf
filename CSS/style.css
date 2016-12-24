@@ -1,10 +1,10 @@
-/*body{
-	background-image: url("../img/books.jpg");
+.body{
+    background-color: rgba(245, 245, 220, 0.36)!important;
+	/*background-image: url("../img/books.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-}*/
-
+	background-attachment: fixed;*/
+}
 
 .clear-box{
 	clear:both;
@@ -26,6 +26,7 @@ nav{
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
+    margin: 1%;
 }
 
 #custom-search-input input{
@@ -113,6 +114,11 @@ img{
 .search-by{
 	margin-left: 2%;
 	float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    
 }
 .profile-book li{
 	list-style: none;
@@ -123,9 +129,11 @@ img{
 	text-align: center;
 }
 .profile-book li div{
-	margin-top: 10%;
-	font-size: 15px;
-	font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 16px 0 23px 0;
 }
 
 /*contact form css*/
@@ -231,6 +239,26 @@ fieldset {
  color:#888;
 }
 
+.container{
+    /*box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.1);*/
+    margin-top: 10%;
+    /*-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;*/
+ }
+ .container p{
+   font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+ }
 
-
-
+.cursive-headline{
+	font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 42px;
+    margin: 0 0 23px 0;
+}
+ 

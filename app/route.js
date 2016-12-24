@@ -14,7 +14,7 @@
 			controller : "bookInfo",
 
 		}).when('/home', {
-			template : '<h1>HELLO BOOK LOVERS</h1>',
+			templateUrl : 'app/views/homePage.html',
 
 		}).when('/profile', {
 			templateUrl : 'app/views/profile.html',
