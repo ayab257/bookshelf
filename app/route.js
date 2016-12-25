@@ -24,7 +24,7 @@
 			templateUrl : 'app/views/contact.html',
 			
 		}).otherwise({
-			redirectTo : '/'
+			redirectTo : '/home'
 		});
 
 	}

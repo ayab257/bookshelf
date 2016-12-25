@@ -64,6 +64,7 @@ nav{
     width: 100%;
 }*/
 
+/*results*/
 img{
 	width: 200px;
 	height: 300px;
@@ -120,6 +121,7 @@ img{
     line-height: 23px;
     
 }
+/*profile css*/
 .profile-book li{
 	list-style: none;
 	float: left; 
@@ -239,6 +241,7 @@ fieldset {
  color:#888;
 }
 
+/*about index page css*/
 .container{
     /*box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.1);*/
     margin-top: 10%;
